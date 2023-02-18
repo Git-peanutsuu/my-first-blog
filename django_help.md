@@ -1,7 +1,7 @@
 このdjangoの仮想環境は'C:/Users/micro/.virtualenvs/Sample-qsA2uo3d/Scripts/python.exe'にある。消したければ、pipenv --rm　ーーー
 https://tutorial.djangogirls.org/ja/django_start_project/
 を参考にした
-
+・3c9ed60e4c153c716006f528b2b48ed48573d672　APItoken for Pythonanywhere.com
 ・Djangoのサーバーを動かすには　python manage.py runserver　を実行
 ・python manage.py createsuperuserで作ったユーザー名:peapeaponpon メール, パスワード　NX
 
