@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import psycopg2
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,12 +80,12 @@ DATABASES = {
     "default": {
         # "ENGINE": "django.db.backends.postgresql",
         # "NAME": os.path.join(BASE_DIR, "db.postgresql_psycopg2"),
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        # 'USER': '<database_username>',
-        # 'PASSWORD': '<password>',
-        # 'HOST': '<database_hostname_or_ip>',
-        # 'PORT': '<database_port>',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'djangogirls',
+        'USER': 'postgres',#postgresかも
+        'PASSWORD': 'postg78hs',
+        'HOST': 'localhost',
+        'PORT': '5432',
         
     }
 }
@@ -131,3 +132,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+LOGIN_REDIRECT_URL = '/'
