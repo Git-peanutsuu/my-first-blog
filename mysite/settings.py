@@ -82,7 +82,7 @@ DATABASES = {
         # "NAME": os.path.join(BASE_DIR, "db.postgresql_psycopg2"),
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'djangogirls',
-        'USER': '',#postgresかも
+        'USER': '',
         'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '5432',
